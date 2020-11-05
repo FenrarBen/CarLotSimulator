@@ -4,8 +4,16 @@ using System.Text;
 
 namespace CarLotSimulator
 {
-    class CarLot
+    static class CarLot
     {
-        public List<Car> CarList = new List<Car>();
+        
+        static public List<Car> CarList = new List<Car>();
+        static public int numberOfCars = 0;
+
+        static public void Add(Car newCar)
+        {
+            CarList.Add(newCar);
+            numberOfCars++;
+        }
     }
 }
