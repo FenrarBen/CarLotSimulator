@@ -16,7 +16,8 @@ namespace CarLotSimulator
 
         public Car()
         {
-            CarLot.Add(this);
+            CarLot.CarList.Add(this);
+            CarLot.numberOfCars++;
         }
         public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDrivable)
         {
@@ -26,7 +27,8 @@ namespace CarLotSimulator
             this.EngineNoise = engineNoise;
             this.HonkNoise = honkNoise;
             this.IsDrivable = isDrivable;
-            CarLot.Add(this);
+            CarLot.numberOfCars++;
+            CarLot.CarList.Add(this);
         }
 
         public void MakeEngineNoise(string EngineNoise)

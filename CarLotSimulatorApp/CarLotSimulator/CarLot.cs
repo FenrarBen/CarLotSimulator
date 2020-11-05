@@ -10,10 +10,5 @@ namespace CarLotSimulator
         static public List<Car> CarList = new List<Car>();
         static public int numberOfCars = 0;
 
-        static public void Add(Car newCar)
-        {
-            CarList.Add(newCar);
-            numberOfCars++;
-        }
     }
 }
